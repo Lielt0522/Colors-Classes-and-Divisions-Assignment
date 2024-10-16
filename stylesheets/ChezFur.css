@@ -1,0 +1,94 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif; /* Set the default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Header Styles */
+header {
+    background-color: #f2f2f2; /* Light gray background for header */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center content in the header */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for navigation */
+    overflow: hidden; /* Clear floats */
+    margin-top: 10px; /* Separate nav from header */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from list */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    float: left; /* Align navigation items horizontally */
+}
+
+nav ul li a {
+    display: block; /* Make the entire area clickable */
+    color: white; /* White text for navigation links */
+    text-align: center; /* Center text in links */
+    padding: 14px 16px; /* Padding for navigation links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    background-color: #111; /* Darker background on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px; /* Padding for main content area */
+}
+
+/* Responsive Hero Image */
+.responsive-hero {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f2f2f2; /* Light gray background for footer */
+    padding: 20px; /* Padding around footer */
+    text-align: center; /* Center content in footer */
+}
+
+.sponsor {
+    width: 100px; /* Adjust size as needed */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small Screen Styles */
+@media (max-width: 600px) {
+    header {
+        background-image: url('../images/LogoSmall.png'); /* Small logo for mobile */
+        background-repeat: no-repeat; /* No repeat */
+        background-position: right top; /* Position logo */
+        min-height: 50px; /* Minimum height for small screens */
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 601px) {
+    header {
+        background-image: url('../images/LogoLarge.png'); /* Large logo for desktop */
+        background-repeat: no-repeat; /* No repeat */
+        background-position: bottom right; /* Position logo */
+        min-height: 100px; /* Minimum height for large screens */
+    }
+}
+
+/* Color Palette Documentation */
+/* Chosen Colors:
+   - Light Gray (#f2f2f2) for header and footer to create a soft, neutral look.
+   - Dark Gray (#333) for navigation to provide contrast and improve readability.
+   - Darker Gray (#111) on hover for navigation links enhances interactivity.
+   Documentation: Color palette chosen for accessibility and visual clarity.
+*/
